@@ -18,16 +18,17 @@ This repository contains the complete scripts and configuration files for a comp
   [calculate_at_content_top1_vs_genome.py]./02.segment_value/calculate_at_content_top1_vs_genome.py) — Compare the AT content difference between the centromere Top1 repeat and the whole genome.
   [plot_top1_dominance.py](./02.segment_value/plot_top1_dominance.py) — Plot a heatmap of Top1 repeat dominance across different centromeres.
   [generate_csub_scripts.py](./02.segment_value/generate_csub_scripts.py) — Generate batch job submission scripts for cluster environments.
-  [1.Segment
+  [1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt](./02.segment_value/1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt) — This module processes centromeric regions identified in the genome assembly using the moddotplot tool. The goal is to analyze sequence self-similarity and identify the most dominant higher-order repeat (Top1 sequence) by dynamically assessing different sliding window sizes.
 
-###03. SV Between Haplotypes (Structural Variation)* [01.SV_between_haplotypes.sh](https://www.google.com/search?q=./03.sv_between_haplotypes/01.SV_between_haplotypes.sh) — Complete main pipeline script for detecting structural variations between haplotypes.
+03. SV Between Haplotypes (Structural Variation) [01.SV_between_haplotypes.sh](./03.sv_between_haplotypes/01.SV_between_haplotypes.sh) — Complete main pipeline script for detecting structural variations between haplotypes.
 
-###04. Satellite Annotation* [01.run_TRASH.sh](https://www.google.com/search?q=./04.satellite_annotation/01.run_TRASH.sh) — Run the TRASH tool to identify tandem repeats across the whole genome.
-* [02.constrain_the_length.py](https://www.google.com/search?q=./04.satellite_annotation/02.constrain_the_length.py) — Classify satellite DNAs based on repeat unit length.
-* [03.filter_numbers.py](https://www.google.com/search?q=./04.satellite_annotation/03.filter_numbers.py) — Filter satellite DNA results with too few copy numbers.
-* [04.cal_edit_distance.py](https://www.google.com/search?q=./04.satellite_annotation/04.cal_edit_distance.py) — Calculate the minimum cyclic edit distance between satellite DNA repeat units.
+04. Satellite Annotation
+  [01.run_TRASH.sh](./04.satellite_annotation/01.run_TRASH.sh) — Run the TRASH tool to identify tandem repeats across the whole genome.
+  [02.constrain_the_length.py](./04.satellite_annotation/02.constrain_the_length.py) — Classify satellite DNAs based on repeat unit length.
+  [03.filter_numbers.py](./04.satellite_annotation/03.filter_numbers.py) — Filter satellite DNA results with too few copy numbers.
+  [04.cal_edit_distance.py]./04.satellite_annotation/04.cal_edit_distance.py) — Calculate the minimum cyclic edit distance between satellite DNA repeat units.
 
-###05. TE Annotation (Transposable Element)* [01.run_HiTE.sh](https://www.google.com/search?q=./05.te_annotation/01.run_HiTE.sh) — Run HiTE to annotate LTR retrotransposons across the whole genome.
+05. TE Annotation (Transposable Element)* [01.run_HiTE.sh](https://www.google.com/search?q=./05.te_annotation/01.run_HiTE.sh) — Run HiTE to annotate LTR retrotransposons across the whole genome.
 * [02.gff2bed.py](https://www.google.com/search?q=./05.te_annotation/02.gff2bed.py) — Convert HiTE output GFF3 annotation results to BED format.
 * [03.TEsorter_filter.py](https://www.google.com/search?q=./05.te_annotation/03.TEsorter_filter.py) — Use TEsorter to classify and uniformly name intact LTR transposons.
 
