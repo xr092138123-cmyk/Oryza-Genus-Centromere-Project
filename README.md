@@ -11,13 +11,14 @@ This repository contains the complete scripts and configuration files for a comp
  [04.QV.py](./01.quality_assessment/04.QV.py) — Calculate Genome Quality Value (QV) based on kmer spectrum.
 
 02. Segment Value (Sequence Segment Value Analysis)
-  [analyze_moddotplot.py](https://www.google.com/search?q=./02.segment_value/analyze_moddotplot.py) — Parse moddotplot results, calculate sequence self-similarity and repeat characteristics across different window scales.
-  [aggregate_repeats_results.py](https://www.google.com/search?q=./02.segment_value/aggregate_repeats_results.py) — Aggregate repeat statistics from different windows and centromere regions.
-  [analyze_centromere_dynamics.py](https://www.google.com/search?q=./02.segment_value/analyze_centromere_dynamics.py) — Dynamically select the optimal analysis window for each centromere and classify structural types.
-  [extract_top1_seqs.py](https://www.google.com/search?q=./02.segment_value/extract_top1_seqs.py) — Extract the most dominant (Top1) repeat sequence under the optimal window.
-  [calculate_at_content_top1_vs_genome.py](https://www.google.com/search?q=./02.segment_value/calculate_at_content_top1_vs_genome.py) — Compare the AT content difference between the centromere Top1 repeat and the whole genome.
-  [plot_top1_dominance.py](https://www.google.com/search?q=./02.segment_value/plot_top1_dominance.py) — Plot a heatmap of Top1 repeat dominance across different centromeres.
-  [generate_csub_scripts.py](https://www.google.com/search?q=./02.segment_value/generate_csub_scripts.py) — Generate batch job submission scripts for cluster environments.
+  [analyze_moddotplot.py](./02.segment_value/analyze_moddotplot.py) — Parse moddotplot results, calculate sequence self-similarity and repeat characteristics across different window scales.
+  [aggregate_repeats_results.py](./02.segment_value/aggregate_repeats_results.py) — Aggregate repeat statistics from different windows and centromere regions.
+  [analyze_centromere_dynamics.py](./02.segment_value/analyze_centromere_dynamics.py) — Dynamically select the optimal analysis window for each centromere and classify structural types.
+  [extract_top1_seqs.py](./02.segment_value/extract_top1_seqs.py) — Extract the most dominant (Top1) repeat sequence under the optimal window.
+  [calculate_at_content_top1_vs_genome.py]./02.segment_value/calculate_at_content_top1_vs_genome.py) — Compare the AT content difference between the centromere Top1 repeat and the whole genome.
+  [plot_top1_dominance.py](./02.segment_value/plot_top1_dominance.py) — Plot a heatmap of Top1 repeat dominance across different centromeres.
+  [generate_csub_scripts.py](./02.segment_value/generate_csub_scripts.py) — Generate batch job submission scripts for cluster environments.
+  [1.Segment
 
 ###03. SV Between Haplotypes (Structural Variation)* [01.SV_between_haplotypes.sh](https://www.google.com/search?q=./03.sv_between_haplotypes/01.SV_between_haplotypes.sh) — Complete main pipeline script for detecting structural variations between haplotypes.
 
