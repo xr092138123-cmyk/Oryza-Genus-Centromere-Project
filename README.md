@@ -66,7 +66,7 @@ This repository contains the complete scripts and configuration files for a comp
  [05.bismark_deduplicate.sh](./10.methylation_analysis/05.bismark_deduplicate.sh) — Perform deduplication on Bismark alignment results.
  [06.WGBS_mapping_stat.py](./10.methylation_analysis/06.WGBS_mapping_stat.py) — Statistically summarize WGBS mapping results and coverage characteristics.
  [07.bismark_methylation_extractor.sh](./10.methylation_analysis/07.bismark_methylation_extractor.sh) — Extract methylation information for CpG, CHG, and CHH sites.
- [08.bismark_CX2methylkit.pl](./10.methylation_analysis/08.bismark_CX2methylkit.pl) — Convert Bismark output to the input format recognizable by methylKit.
+ [08.bismark_CX2methykit.pl](./10.methylation_analysis/08.bismark_CX2methykit.pl) — Convert Bismark output to the input format recognizable by methylKit.
  [09.methylation_level_calculation.R](./10.methylation_analysis/09.methylation_level_calculation.R) — Calculate DNA methylation levels in different genomic regions or contexts using methylKit.
 
 Visualization Scripts [01.boxplot.R](./10.methylation_analysis/10.plot/01.boxplot.R) — Plot box plots of DNA methylation levels.
