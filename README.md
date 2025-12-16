@@ -62,14 +62,14 @@ This repository contains the complete scripts and configuration files for a comp
 10. Methylation Analysis (DNA Methylation) [01.quality_control.sh](./10.methylation_analysis/01.quality_control.sh) — Perform quality control on raw WGBS data.
  [02.filter.sh](./10.methylation_analysis/02.filter.sh) — Further filter sequencing data to remove low-quality reads and potential contaminant sequences.
  [03.bismark_index.sh](./10.methylation_analysis/03.bismark_index.sh) — Build the reference genome bisulfite alignment index using Bismark.
- [04.bismark_bowtie2.sh](https://www.google.com/search?q=./10.methylation_analysis/04.bismark_bowtie2.sh) — Run Bismark based on Bowtie2 to align WGBS data to the reference genome.
- [05.bismark_deduplicate.sh](https://www.google.com/search?q=./10.methylation_analysis/05.bismark_deduplicate.sh) — Perform deduplication on Bismark alignment results.
- [06.WGBS_mapping_stat.py](https://www.google.com/search?q=./10.methylation_analysis/06.WGBS_mapping_stat.py) — Statistically summarize WGBS mapping results and coverage characteristics.
- [07.bismark_methylation_extractor.sh](https://www.google.com/search?q=./10.methylation_analysis/07.bismark_methylation_extractor.sh) — Extract methylation information for CpG, CHG, and CHH sites.
- [08.bismark_CX2methylkit.pl](https://www.google.com/search?q=./10.methylation_analysis/08.bismark_CX2methylkit.pl) — Convert Bismark output to the input format recognizable by methylKit.
- [09.methylation_level_calculation.R](https://www.google.com/search?q=./10.methylation_analysis/09.methylation_level_calculation.R) — Calculate DNA methylation levels in different genomic regions or contexts using methylKit.
+ [04.bismark_bowtie2.sh](./10.methylation_analysis/04.bismark_bowtie2.sh) — Run Bismark based on Bowtie2 to align WGBS data to the reference genome.
+ [05.bismark_deduplicate.sh](./10.methylation_analysis/05.bismark_deduplicate.sh) — Perform deduplication on Bismark alignment results.
+ [06.WGBS_mapping_stat.py](./10.methylation_analysis/06.WGBS_mapping_stat.py) — Statistically summarize WGBS mapping results and coverage characteristics.
+ [07.bismark_methylation_extractor.sh](./10.methylation_analysis/07.bismark_methylation_extractor.sh) — Extract methylation information for CpG, CHG, and CHH sites.
+ [08.bismark_CX2methylkit.pl](./10.methylation_analysis/08.bismark_CX2methylkit.pl) — Convert Bismark output to the input format recognizable by methylKit.
+ [09.methylation_level_calculation.R](./10.methylation_analysis/09.methylation_level_calculation.R) — Calculate DNA methylation levels in different genomic regions or contexts using methylKit.
 
-Visualization Scripts* [01.boxplot.R](./10.methylation_analysis/10.plot/01.boxplot.R) — Plot box plots of DNA methylation levels.
+Visualization Scripts [01.boxplot.R](./10.methylation_analysis/10.plot/01.boxplot.R) — Plot box plots of DNA methylation levels.
  [02.lineplot.R](./10.methylation_analysis/10.plot/02.lineplot.R) — Plot line plots of DNA methylation levels.
 
 11. HiC Data Processing* [01.run_HiCpro.sh](./11.hic_data_processing/01.run_HiCpro.sh) — Complete main pipeline script for processing HiC data using HiCPro.
