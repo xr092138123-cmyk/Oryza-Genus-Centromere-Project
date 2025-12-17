@@ -1,7 +1,7 @@
-# Rice-Genus-Centromere-Project
+# Oryza-Genus-Centromere-Project
 
 
-This repository contains the complete scripts and configuration files for a comprehensive **Rice-Genus-Centromere-Project**, covering assembly quality assessment, structural feature analysis (repeats, TEs, rDNA, organelle DNA transfer), phylogeny, epigenetics (Methylation), and HiC data processing.
+This repository contains the complete scripts and configuration files for a comprehensive **Oryza-Genus-Centromere-Project**, covering assembly quality assessment, structural feature analysis (repeats, TEs, rDNA, organelle DNA transfer), phylogeny, epigenetics (Methylation), and HiC data processing.
 
 01. Quality Assessment
  [01.busco.sh](./01.quality_assessment/01.busco.sh) — Run BUSCO to assess the completeness of the genome assembly.
