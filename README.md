@@ -10,15 +10,7 @@ This repository contains the complete scripts and configuration files for a comp
  [0302.cal_sequencing_depth.py](./01.quality_assessment/03.sequencing_depth/0302.cal_sequencing_depth.py) — Calculate whole-genome sequencing depth and coverage uniformity based on mapping results.
  [04.QV.py](./01.quality_assessment/04.QV.py) — Calculate Genome Quality Value (QV) based on kmer spectrum.
 
-02. Segment Value (Sequence Segment Value Analysis)
-  [analyze_moddotplot.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/analyze_moddotplot.py) — Parse moddotplot results, calculate sequence self-similarity and repeat characteristics across different window scales.
-  [aggregate_repeats_results.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/aggregate_repeats_results.py) — Aggregate repeat statistics from different windows and centromere regions.
-  [analyze_centromere_dynamics.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/analyze_centromere_dynamics.py) — Dynamically select the optimal analysis window for each centromere and classify structural types.
-  [extract_top1_seqs.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/extract_top1_seqs.py) — Extract the most dominant (Top1) repeat sequence under the optimal window.
-  [calculate_at_content_top1_vs_genome.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/calculate_at_content_top1_vs_genome.py) — Compare the AT content difference between the centromere Top1 repeat and the whole genome.
-  [plot_top1_dominance.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/plot_top1_dominance.py) — Plot a heatmap of Top1 repeat dominance across different centromeres.
-  [generate_csub_scripts.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/generate_csub_scripts.py) — Generate batch job submission scripts for cluster environments.
-  [1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt) — This module processes centromeric regions identified in the genome assembly using the moddotplot tool. The goal is to analyze sequence self-similarity and identify the most dominant higher-order repeat (Top1 sequence) by dynamically assessing different sliding window sizes.
+
 
 03. SV Between Haplotypes (Structural Variation) [01.SV_between_haplotypes.sh](./03.SV_between_haplotypes/01.SV_between_haplotypes.sh) — Complete main pipeline script for detecting structural variations between haplotypes.
 
@@ -72,6 +64,17 @@ This repository contains the complete scripts and configuration files for a comp
  [09.methylation_level_calculation.R](./10.methylation_analysis/09.methylation_level_calculation.R) — Calculate DNA methylation levels in different genomic regions or contexts using methylKit.
  Visualization Scripts [01.boxplot.R](./10.methylation_analysis/10.plot/01.boxplot.R) — Plot box plots of DNA methylation levels.
  [02.lineplot.R](./10.methylation_analysis/10.plot/02.lineplot.R) — Plot line plots of DNA methylation levels.
+
+11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units 
+  [analyze_moddotplot.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/analyze_moddotplot.py) — Parse moddotplot results, calculate sequence self-similarity and repeat characteristics across different window scales.
+  [aggregate_repeats_results.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/aggregate_repeats_results.py) — Aggregate repeat statistics from different windows and centromere regions.
+  [analyze_centromere_dynamics.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/analyze_centromere_dynamics.py) — Dynamically select the optimal analysis window for each centromere and classify structural types.
+  [extract_top1_seqs.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/extract_top1_seqs.py) — Extract the most dominant (Top1) repeat sequence under the optimal window.
+  [calculate_at_content_top1_vs_genome.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/calculate_at_content_top1_vs_genome.py) — Compare the AT content difference between the centromere Top1 repeat and the whole genome.
+  [plot_top1_dominance.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/plot_top1_dominance.py) — Plot a heatmap of Top1 repeat dominance across different centromeres.
+  [generate_csub_scripts.py](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/generate_csub_scripts.py) — Generate batch job submission scripts for cluster environments.
+  [1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt](./11.De_Novo_Identification_and_Characterization_of_Centromeric_Main_Repeat_Units/1.Segment_Value_Based_Identification_of_Centromeric_Intervals.txt) — This module processes centromeric regions identified in the genome assembly using the moddotplot tool. The goal is to analyze sequence self-similarity and identify the most dominant higher-order repeat (Top1 sequence) by dynamically assessing different sliding window sizes.
+
 
 12. HiC Data Processing [01.run_HiCpro.sh](./11.HiC_data_processing/01.run_HiCpro.sh) — Complete main pipeline script for processing HiC data using HiCPro.
  [02.process_HiC_matrix.py](./11.HiC_data_processing/02.process_HiC_matrix.py) — Process the contact matrix output by HiCPro.
