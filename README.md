@@ -18,7 +18,7 @@ Scripts for evaluating the quality, completeness, and evolutionary plausibility 
 * [02.omark.py](./01.quality_assessment/02.omark.py) : Assess the evolutionary plausibility and taxonomic consistency of the predicted protein-coding gene set.
 * [0301.mapping_reads2genome.py](./01.quality_assessment/03.sequencing_depth/0301.mapping_reads2genome.py): Map raw HiFi/ONT sequencing reads back to the assembled genome.
 * [0302.cal_sequencing_depth.py](./01.quality_assessment/03.sequencing_depth/0302.cal_sequencing_depth.py) : Calculate whole-genome sequencing depth and coverage uniformity based on mapping results.
-* [04.QV.py](./01.quality_assessment/04.QV.py): Calculate Genome Quality Value (QV) based on k-mer spectrum.
+* [04.QV.py](./01.quality_assessment/04.QV.py): Calculate Genome Quality Value (QV).
 
 
 ### 02. Centromere Region Identification
