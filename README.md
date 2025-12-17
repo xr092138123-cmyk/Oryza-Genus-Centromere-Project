@@ -46,36 +46,35 @@ Scripts for the identification and characterization of genome-wide tandem repeat
 * [01.run_TRASH.sh](./04.satellite_annotation/01.run_TRASH.sh): Run the **TRASH** tool to identify tandem repeats across the whole genome.
 * [02.constrain_the_length.py](./04.satellite_annotation/02.constrain_the_length.py): Classify satellite DNAs based on repeat unit length.
 * [03.filter_numbers.py](./04.satellite_annotation/03.filter_numbers.py): Filter satellite DNA results with too few copy numbers.
-* [04.cal_edit_distance.py]./04.satellite_annotation/04.cal_edit_distance.py): Calculate the minimum cyclic edit distance between satellite DNA repeat units.
+* [04.cal_edit_distance.py](./04.satellite_annotation/04.cal_edit_distance.py): Calculate the minimum cyclic edit distance between satellite DNA repeat units.
  
 ### 05. TE Annotation (Transposable Element)
 
 Scripts for LTR retrotransposon annotation and insertion time estimation.
 
-* `01.run_HiTE.sh`: Run **HiTE** to annotate LTR retrotransposons across the whole genome.
-* `02.gff2bed.py`: Convert HiTE output GFF3 annotation results to BED format.
-* `03.TEsorter_filter.py`: Use **TEsorter** to classify and uniformly name intact LTR transposons.
+* [01.run_HiTE.sh](./05.TE_annotation/01.run_HiTE.sh): Run **HiTE** to annotate LTR retrotransposons across the whole genome.
+* [02.gff2bed.py](./05.TE_annotation/02.gff2bed.py): Convert HiTE output GFF3 annotation results to BED format.
+* [03.TEsorter_filter.py](./05.TE_annotation/03.TEsorter_filter.py): Use **TEsorter** to classify and uniformly name intact LTR transposons.
 * **`04.insertion_time`** (LTR Insertion Time Analysis)
-* `0400.main.py`: Master control script for LTR insertion time analysis.
-* `0401.split_paired_LTR.py`: Extract paired left and right LTR sequences from the BED file.
-* `0402.insertion_time.py`: Calculate sequence divergence and estimate insertion time.
-* `0403.add_info.py`: Add sample or genome prefix information to the insertion time results.
-* `0404.map_time2bed.py`: Map insertion time information back to the original BED annotation file.
-
-
+* [0400.main.py](./05.TE_annotation/04.insertion_time/0400.main.py): Master control script for LTR insertion time analysis.
+* [0401.split_paired_LTR.py](./05.TE_annotation/04.insertion_time/0401.split_paired_LTR.py): Extract paired left and right LTR sequences from the BED file.
+* [0402.insertion_time.py](./05.TE_annotation/04.insertion_time/0402.insertion_time.py): Calculate sequence divergence and estimate insertion time.
+* [0403.add_info.py](./05.TE_annotation/04.insertion_time/0403.add_info.py): Add sample or genome prefix information to the insertion time results.
+* [0404.map_time2bed.py](./05.TE_annotation/04.insertion_time/0404.map_time2bed.py) : Map insertion time information back to the original BED annotation file.
 
 ### 06. Phylogenetic Analysis
 
-* `01.phylogenetic_analysis.sh`: Complete pipeline script for **Phylogenetic Analysis**.
+* [01.phylogenetic_analysis.sh](./06.Phylogenetic_analysis/01.phylogenetic_analysis.sh): Complete pipeline script for **Phylogenetic Analysis**.
 
 ### 07. rDNA Annotation (Ribosomal DNA)
 
 Scripts for the annotation and copy number analysis of Ribosomal DNA loci.
 
-* `01.run_barrnap.py`: Run **barrnap** for automated annotation of rDNA loci in the genome.
-* `02.gff2bed.py`: Convert rDNA annotation results from GFF format to BED format.
-* `03.cal_num.py`: Count the copy numbers of different rDNA types on each chromosome.
-* `04.heatmap.py`: Plot a heatmap of rDNA copy number distribution across chromosomes.
+* [01.run_barrnap.py](./07.rDNA_annotation/01.run_barrnap.py): Run **barrnap** for automated annotation of rDNA loci in the genome.
+* [02.gff2bed.py](./07.rDNA_annotation/02.gff2bed.py): Convert rDNA annotation results from GFF format to BED format.
+* [03.cal_num.py](./07.rDNA_annotation/03.cal_num.py): Count the copy numbers of different rDNA types on each chromosome.
+* [04.heatmap.py](./07.rDNA_annotation/04.heatmap.py): Plot a heatmap of rDNA copy number distribution across chromosomes.
+
 
 ### 08. NUMT and NUPT Annotation (Organelle DNA Transfer)
 
