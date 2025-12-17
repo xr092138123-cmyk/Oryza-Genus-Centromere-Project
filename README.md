@@ -55,10 +55,12 @@ This repository contains the complete scripts and configuration files for a comp
  [02.HOR_score_plot.R](./09.HOR/02.windows/02.HOR_score_plot.R) — Script for visualizing HOR scoring results.
  [1.Batch_extract_Pairwise_Identity.py](./09.HOR/01.satellite/1.Batch_extract_Pairwise_Identity.py) — Batch extraction of pairwise sequence alignment identity.
  [2.Calculate_HORpairscore_from_Pairwise_Identity.py](./09.HOR/01.satellite/2.Calculate_HORpairscore_from_Pairwise_Identity.py) — Calculate HOR pair scores from pairwise identity.
- [3.Calculate_HORpairscore_from_Pairwise_Identity.sh](./09.HOR/01.satellite/3.Calculate_HORpairscore_from_Pairwise_Identity.sh) — Shell script wrapper for running batch HOR score calculation.
+ [2.Calculate_HORpairscore_from_Pairwise_Identity.sh](./09.HOR/01.satellite/2.Calculate_HORpairscore_from_Pairwise_Identity.sh) — Shell script wrapper for running batch HOR score calculation.
+ [3.Batch_build_large_blocksize.py](./09.HOR/01.satellite/3.Batch_build_large_blocksize.py) — Batch script for constructing HOR analysis results using a larger block size (window size) variant for satellite repeats.
+ [3.Batch_build_large_blocksize.sh](./09.HOR/01.satellite/3.Batch_build_large_blocksize.sh) — Executes the batch process for constructing HOR analysis results using a larger block size (window size) variant for satellite repeats.
  [4.plot_scores_by_blocks.py](./09.HOR/01.satellite/4.plot_scores_by_blocks.py) — Visualize HOR scores by blocks.
 
-10. Methylation Analysis (DNA Methylation) [01.quality_control.sh](./10.methylation_analysis/01.quality_control.sh) — Perform quality control on raw WGBS data.
+11. Methylation Analysis (DNA Methylation) [01.quality_control.sh](./10.methylation_analysis/01.quality_control.sh) — Perform quality control on raw WGBS data.
  [02.filter.sh](./10.methylation_analysis/02.filter.sh) — Further filter sequencing data to remove low-quality reads and potential contaminant sequences.
  [03.bismark_index.sh](./10.methylation_analysis/03.bismark_index.sh) — Build the reference genome bisulfite alignment index using Bismark.
  [04.bismark_bowtie2.sh](./10.methylation_analysis/04.bismark_bowtie2.sh) — Run Bismark based on Bowtie2 to align WGBS data to the reference genome.
