@@ -1,6 +1,6 @@
 1、提取着丝粒区域的fa文件
 e Oryza13_centromere_pos.xls|grep -v Species|perl -ne 'chomp;@tmp=split/\t/,$_;print "samtools  faidx 01.genome/$tmp[0]\_$tmp[1].fasta $tmp[2]:$tmp[3]-$tmp[4] >01.centromere_fasta/$tmp[0]\_$tmp[1].$tmp[2].centromere.fa\n"'|sh
-2、moddotplot分析：遍历各个窗口：w50图画不出来，故批量分析不画图，只分析获得bed文件
+2、moddotplot分析：遍历各个窗口：w50分析获得bed文件
 ls 01.centromere_fasta/*.fa|perl -ne 'chomp;@i=(50,100,150,200,250,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2500,3000,3500,4000);$o=(split/\//,$_)[-1];$o=~s/.fa//;foreach $i (@i){print "moddotplot static -f $_ -w $i -t 2 -o 02.moddotplot_analysis/$o.w$i --no-plot --no-hist\n"}' >02.moddotplot_analysis.sh
 生成csub投递的任务
 python generate_csub_scripts.py 02.moddotplot_analysis.sh "moddotplot;2;/share/org/YZWL/yzwl_shahd/wangdan/Oryza_Centromere/moddotplot/all_batch" 140 02.moddotplot_analysis_csub
@@ -38,3 +38,4 @@ python plot_top1_dominance.py 04.repeat_summary_new.all.summary_metrics_classifi
 ls 04.repeat_summary_new/*/*contribution_details.tsv|perl -ne 'chomp;$pre=(split/_contribution/,(split/\//,$_)[-1])[0];open(IN,"<$_");while(<IN>){print "$pre\t$_";}close IN;' >04.repeat_summary_new.all.contribution_details.tsv
 
 ls 03.repeat_stat/*top20_repeats.txt|perl -ne 'chomp;@pre=split/\./,(split/\//,$_)[-1];$w=(split/\_/,$pre[2])[0];open(IN,"<$_");while(<IN>){print "$pre[0]\t$pre[1]\t$w\t$_";}close IN;' >03.repeat_stat.all.top20_repeats.txt
+
