@@ -14,7 +14,7 @@ This repository contains the complete scripts and configuration files for a comp
 CENH3  [run_AllChrSegmentationCENH3_CBS-v6.R](./02.Centromere_Region_Identification/01.CENH3/run_AllChrSegmentationCENH3_CBS-v6.R ) — CENH3-Based Centromere Delineation
 [run_AllChrSegmentationCENH3_CBS-v6.sh](./02.Centromere_Region_Identification/01.CENH3/run_AllChrSegmentationCENH3_CBS-v6.sh ) - Running Script HiC Data Processing [01.run_HiCpro.sh](./02.Centromere_Region_Identification/02.HiC_data_processing/01.run_HiCpro.sh) — Complete main pipeline script for processing HiC data using HiCPro.
  [02.process_HiC_matrix.py](./02.Centromere_Region_Identification/02.HiC_data_processing/02.process_HiC_matrix.py) — Process the contact matrix output by HiCPro.
- [confighicpro.txt](./02.Centromere_Region_Identification/02.HiC_data_processing/confighicpro.txt) — HiCPro run configuration file.
+ [01.config-hicpro.txt](./02.Centromere_Region_Identification/02.HiC_data_processing/01.config-hicpro.txt) — HiCPro run configuration file.
 
 
 03. SV Between Haplotypes (Structural Variation) [01.SV_between_haplotypes.sh](./03.SV_between_haplotypes/01.SV_between_haplotypes.sh) — Complete main pipeline script for detecting structural variations between haplotypes.
