@@ -28,14 +28,19 @@ Scripts for defining and identifying the centromeric regions using CENH3 and Hi-
 * **`01.CENH3`** (CENH3-Based Delineation)
 * [run_AllChrSegmentationCENH3_CBS-v6.R](./02.Centromere_Region_Identification/01.CENH3/run_AllChrSegmentationCENH3_CBS-v6.R ): R script for **CENH3-Based Centromere Delineation** using Circular Binary Segmentation (CBS).
 * [run_AllChrSegmentationCENH3_CBS-v6.sh](./02.Centromere_Region_Identification/01.CENH3/run_AllChrSegmentationCENH3_CBS-v6.sh ): Shell script wrapper for running the CENH3 segmentation analysis.
-* [03.centromere_prediction_github](./02.Centromere_Region_Identification/03.centromere_prediction_github ): This document contains detailed information on the centromere prediction model
-* [xr092138123-cmyk/Cent-Mind/centromere_prediction_github ](https://github.com/xr092138123-cmyk/Cent-Mind )：This repository contains supplementary software for the centromere prediction foundation model.
+
 
 * **`02.HiC_data_processing`** (Hi-C Data Processing)
 * [01.run_HiCpro.sh](./02.Centromere_Region_Identification/02.HiC_data_processing/01.run_HiCpro.sh): Complete main pipeline script for processing Hi-C data using **HiC-Pro**.
 * [02.process_HiC_matrix.py](./02.Centromere_Region_Identification/02.HiC_data_processing/02.process_HiC_matrix.py): Process the contact matrix output by HiC-Pro.
 * [01.config-hicpro.txt](./02.Centromere_Region_Identification/02.HiC_data_processing/01.config-hicpro.txt): Configuration file for the HiC-Pro run.
 
+* **`03.centromere_prediction`**
+* [03.centromere_prediction_github](./02.Centromere_Region_Identification/03.centromere_prediction_github ): This document contains detailed information on the centromere prediction model
+* [xr092138123-cmyk/Cent-Mind/centromere_prediction_github ](https://github.com/xr092138123-cmyk/Cent-Mind )：This repository contains supplementary software for the centromere prediction foundation model.
+
+
+  
 ### 03. SV Between Haplotypes (Structural Variation)
 
 * [01.SV_between_haplotypes.sh](./03.SV_between_haplotypes/01.SV_between_haplotypes.sh): Complete main pipeline script for detecting **Structural Variations (SV)** between haplotypes.
